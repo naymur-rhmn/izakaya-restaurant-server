@@ -113,5 +113,11 @@ async function startServer() {
     console.log(`Listening on port: ${port}`);
   });
 }
-
+// module.exports = async (req, res) => {
+//   await connectToMongoDB();
+//   app(req, res);
+//   app.listen(port, () => {
+//     console.log(`Listening on port: ${port}`);
+//   });
+// };
 startServer().catch(console.error);
